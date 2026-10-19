@@ -53,7 +53,7 @@
 #'
 #' @useDynLib cayleyR, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
-#' @importFrom utils flush.console write.table
+#' @importFrom utils flush.console write.table packageVersion
 #'
 #' @author Yuri Baramykov <lbsbmsu@mail.ru>
 #'
@@ -66,3 +66,4 @@
 
 # Internal helper: check if data.table is available
 has_data_table <- function() requireNamespace("data.table", quietly = TRUE)
+
